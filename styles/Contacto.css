@@ -1,0 +1,93 @@
+.contenedorcontacto{
+    padding: 3em;
+
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    background-color: antiquewhite;
+    height: max-content; 
+
+
+
+
+}
+
+
+.contactobotones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+
+}
+.botonescont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+
+}
+.contactobotones button{
+    width: 35%;
+    margin-bottom: 10%;
+    
+}
+.botonescont button{
+height: 2.5em;
+width: 50%;
+border-radius: 15px;
+border-color: #414BB2;
+color: #414BB2;
+background-color: #ffffff00;
+font-family: "Poppins", sans-serif;
+font-weight: 800;
+}
+button:hover{
+    background-color: #414BB2;
+    color: white;
+}
+.formulariocontacto{
+    
+    margin-top: 3.5%;
+    width: 80%;
+}
+
+@media(max-width: 1120px){
+    
+    .contenedorcontacto{
+        grid-template-columns: repeat(1, 1fr);
+    
+        }
+        .formulariocontacto{
+    
+            margin-top: 2%;
+            width: 100%;
+        }
+        .contactobotones h3{
+            margin-bottom: 5%;
+        }
+        .botonescont button{
+            margin-left: 2%;
+            margin-bottom: 0%;
+        }
+        .botonescont{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+
+
+        }
+
+
+}
+
+@media(max-width: 480px){
+
+    .formulariocontacto{
+    
+        margin-top: 8%;
+        width: 100%;
+    }
+
+}

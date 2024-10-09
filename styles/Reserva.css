@@ -1,0 +1,108 @@
+.reservacontenedor{
+    padding: 3em;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    margin-right: 0%;
+
+
+}
+
+.reserva h3{
+    padding-top: 3em;
+}
+
+.reservaform{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    margin-left: 22%;
+    
+}
+
+.reservaform button{
+height: 2.5em;
+width: max-content;
+border-radius: 15px;
+border-color: #414BB2;
+color: #414BB2;
+background-color: #ffffff00;
+font-family: "Poppins", sans-serif;
+font-weight: 800;
+}
+button:hover{
+    background-color: #414BB2;
+    color: white;
+}
+.fotoreserva{
+   
+    justify-content: center;
+}
+
+.fotoreserva img{
+    width: 80%;
+   
+    border-radius: 15px;
+}
+.fotoreserva:hover img {
+    -webkit-transform:scale(1);transform:scale(1.045);
+}
+
+.tostada{
+    background-color: #414BB2;
+    color: white;
+}
+.tostada:hover button{
+   
+    width: max-content;
+    border-radius: 15px;
+    border-color: #414ab200;
+    color: #414ab200;
+    background-color: #ffffff00;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    display: inline-block;
+    letter-spacing: 1px;
+cursor: pointer;
+box-shadow: none;
+-webkit-transition: none;
+-moz-transition: none;
+transition:none;
+}
+@media(max-width: 1120px){
+    
+    .reservacontenedor{
+        
+        grid-template-columns: repeat(1, 1fr);
+    
+        }
+        .fotoreserva{
+            
+            margin-right: 0;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            margin-top: 5%;
+        }
+        .fotoreserva img{
+            width: 60%;
+           
+            border-radius: 15px;
+        }
+        .reservacontenedor button{
+            margin-bottom: 5%;
+
+        }
+        .reservaform button{
+            height: 2.5em;
+            width: 100%;
+            border-radius: 15px;
+            border-color: #414BB2;
+            color: #414BB2;
+            background-color: #ffffff00;
+            font-family: "Poppins", sans-serif;
+            font-weight: 800;
+            }
+
+}
+
